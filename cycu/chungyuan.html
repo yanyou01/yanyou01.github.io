@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chung Yuan Christian University</title>
+    <style>
+        body{
+        overflow-x: hidden;
+        }
+        .top-header{
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            position: fixed;
+            z-index: 100;
+            background-color: #ece9e3;
+            top: 0%;
+            border-bottom: black 1px solid;
+        }
+        #fixed-header{
+            display: block;
+        }
+        .l1{
+            display: inline-block;
+            margin-right: 110px;
+            cursor: pointer;
+        }
+        .l2{
+            display: inline-block;
+            margin-right: 55px;
+            cursor: pointer;
+        }
+        .l3{
+            display: inline-block;
+            margin-left: 55px;
+            cursor: pointer;
+        }
+        .l4{
+            display: inline-block;
+            margin-left: 110px;
+            cursor: pointer;
+        }
+        .s1{
+            display: inline-block;
+            margin: 170px;
+            width: 653px;
+            height: 878px;
+            position: relative;
+        }
+        /*最上面選單*/
+        .library{
+		position: relative;
+		background-image: url('photo/IMG_6662.JPG');                                                               
+		height: 100vh;
+		background-size: cover;
+	    }
+        .library .content {
+		 position: absolute;
+		 top:50%;
+		 left:50%;
+		 transform: translate(-50%, -50%);                                                                   
+		 font-size:3rem;
+		 color: white;
+		 z-index: 2;
+		 text-align: center ;
+	    }
+        /*圖書館*/
+        .pont{
+        font-size: 1.5rem;
+        color: 	#FFFFFF;
+        font-family: Arial, Helvetica, sans-serif;
+        border: cornsilk;
+        }
+        /*中間點選素材部分*/
+        .rexueyuan{
+		position: relative;
+		background-image: url('photo/IMG_5231.JPG');                                                               
+		height: 100vh;
+		background-size: cover;
+	    }
+    .rexueyuan .a{
+         position: absolute;
+		 top:50%;
+		 left:50%;
+		 transform: translate(-50%, -50%);                                                                   
+		 font-size:3rem;
+		 color: white;
+		 z-index: 2;
+		 text-align: center ;
+        }
+        /*樂學園*/
+        .fung{
+		position: relative;
+		background-image: url('photo/j0809.jpg');                                                               
+		height: 100vh;
+		background-size: cover;
+	    }
+    .fung .b{
+         position: absolute;
+		 top:50%;
+		 left:50%;
+		 transform: translate(-50%, -50%);                                                                   
+		 font-size:3rem;
+		 color: white;
+		 z-index: 2;
+		 text-align: center ;
+        }
+        /*風雅頌*/
+        .show{
+        position: relative;
+		background-image: url('picture/IMG_6665.JPG');                                                               
+		height: 100vh;
+		background-size: cover;
+        }
+        .show .c{
+        position: absolute;
+		top:50%;
+	    left:50%;
+		transform: translate(-50%, -50%);                                                                   
+		font-size:3rem;
+		color: white;
+		z-index: 2;
+		text-align: center ;
+        }
+        /*秀德廳*/
+        .ray{
+        position: relative;
+		background-image: url('PHOTO/IMG_6669.jpg');                                                               
+        height: 100vh;
+		background-size: cover;
+        }
+        .d{
+        position: absolute;
+		top:50%;
+	    left:50%;
+		transform: translate(-50%, -50%);                                                                   
+		font-size:3rem;
+		color: white;
+		z-index: 2;
+		text-align: center ;
+        }
+        /*瑞麗堂*/
+        .video{
+        margin-top: 20px;
+        position: relative;
+        left: 22%;
+        width: 0%;
+        }
+        #video{
+        border: 5px solid #d8c7a6;
+        }
+        .img1{
+        margin-top: 10%;
+        left: 10%;
+        position: relative;
+        }
+        /*影片*/
+        .img2{
+        margin-top: 5%;
+        left: 10%;
+        position: relative;
+        }
+        .feedback {
+        left: 25%;
+        position: relative;
+        width: 100%;
+        margin-bottom: 6%;
+        }
+        .feedback2 {
+        display: inline-block;
+        width: 50%;
+        }
+        input[name="name"] {
+        width: 25%;
+        margin: 2% 2% 2% 0px;
+        padding: 1%;
+        display: inline;
+        border-radius: 5px;
+        border: #d8c7a6 solid 4px;
+        transition: all 0.6s ease;
+        }
+        input[name="subject"] {
+        width: 100%;
+        padding: 1% 0px 1% 1%;
+        display: inline;
+        border-radius: 5px;
+        border: #d8c7a6 solid 4px;
+        transition: all 0.6s ease;
+        }
+        textarea {
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        margin-top: 10px;
+        border: #d8c7a6 solid 4px;
+        transition: all 0.6s ease;
+        }
+        input[type="submit"] {
+        width: 20%;
+        padding: 1%;
+        background-color: #d8c7a6;
+        border: #d8c7a6 solid 1px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bolder;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+        }
+        /*回饋表單區塊*/
+        .footer {
+        background-color: #d8c7a6;
+        height: 90px;
+        overflow: hidden;
+        color: #FFFFFF;
+        text-align: center;
+        }
+        .ft {
+        text-align: center;
+        margin-top: 11px;
+        font-size: 10px;
+        }
+        .ftx {
+        margin: 0px auto;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        }
+        /*頁尾*/
+    </style>
+</head>
+<body bgcolor="#ece9e3">
+    <header>
+        <div class="top-header">
+            <div id="fixed-header">
+                <img src="img/cycu.png" alt="素材" style="margin: auto;"> 
+                <!--中原大學-->
+            </div>
+            <div id="top-list">
+               <hr color="black" align="center" width="75%" size="1">
+                <nav>
+                    <div class="l1">
+                        <a href="#library">
+                            <img src="img/learning.png" alt="素材">
+                        </a>
+                        <!--學習環境-->
+                    </div>
+                    <div class="l2">
+                        <a href="#fung">
+                            <img src="img/performance.png" alt="素材" style="margin: auto;">
+                        </a>
+                        <!--藝文活動-->
+                    </div>
+                    <div class="l3">
+                        <a href="#video">
+                            <img src="img/video.png" alt="素材">
+                        </a>
+                        <!--影片-->
+                    </div>
+                    <div class="l4">
+                        <a href="關於我們.html">
+                            <img src="img/aboutus.png" alt="素材">
+                        </a>
+                        <!--關於我們-->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--最上面選單-->
+    </header>
+    <section>
+        <div class="library" id="library">
+            <div class="pic-cover"></div>
+            <h2 class="content">
+               <p> 圖書館</p>
+                <p class="pont"> 
+                    <a href="圖書館.html"><img src="img/READMORE.png" style="float: left;"></img></a>  &nbsp;&nbsp;&nbsp;&nbsp; 
+                  <a href="https://www.google.co.kr/maps/place/Chang+Ching+Yu+Memorial+Library,+CYCU/@24.9580126,121.2407071,18z/data=!4m5!3m4!1s0x346822489dc5817f:0xc53621f8c6d0a0f8!8m2!3d24.9581072!4d121.2406567"  >
+                  <img src="img/map.png" style="float: right;"></img></a>   
+                </p>
+            </h2>
+         </div>
+         <!--圖書館-->
+    </section>
+    <section>
+        <div class="rexueyuan">
+            <div class="pic-cover"></div>
+            <h2 class="a">
+            <p>樂學園</p>
+            <p class="pont">
+                <a href="樂學園.html"><img src="img/READMORE.png" style="float: left;"></img></a> &nbsp;&nbsp;&nbsp;&nbsp; 
+                <a href="https://www.google.co.kr/maps/place/%E7%9C%9F%E7%9F%A5%E6%95%99%E5%AD%B8%E5%A4%A7%E6%A8%93/@24.9560904,121.2413389,19z/data=!3m1!4b1!4m5!3m4!1s0x34682215a5f7e955:0x1ca0501c71d7f47d!8m2!3d24.9560892!4d121.2418861">
+                    <img src="img/map.png" style="float: right;"></img></a>
+            </p>
+            </h2>
+        </div>
+        <!--樂學園-->
+    </section>
+    <section>
+        <div class="fung" id="fung">
+            <div class="pic-cover"></div>
+            <h2 class="b">
+            <p>風雅頌</p>
+            <p class="pont">
+               <a href="風雅頌.html" ><img src="img/READMORE.png" style="float: left;"></img></a> &nbsp;&nbsp;&nbsp;&nbsp; 
+               <a href="https://www.google.co.kr/maps/place/%E7%9C%9F%E7%9F%A5%E6%95%99%E5%AD%B8%E5%A4%A7%E6%A8%93/@24.9560904,121.2413389,19z/data=!3m1!4b1!4m5!3m4!1s0x34682215a5f7e955:0x1ca0501c71d7f47d!8m2!3d24.9560892!4d121.2418861">
+                <img src="img/map.png" style="float: right;"></img></a>
+            </p>
+            </h2>
+       </div>
+       <!--風雅頌-->
+    </section>
+    <section>
+        <div class="show">
+            <div class="pic-cover"></div>
+            <h2 class="c">
+            <p>秀德廳</p>
+            <p class="pont">
+               <a href="秀德廳.html" ><img src="img/READMORE.png" style="float: left;"></img></a> &nbsp;&nbsp;&nbsp;&nbsp; 
+               <a href="https://www.google.co.kr/maps/place/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8%E5%BC%B5%E9%9D%9C%E6%84%9A%E7%B4%80%E5%BF%B5%E5%9C%96%E6%9B%B8%E9%A4%A8/@24.9581069,121.2384682,17z/data=!3m1!4b1!4m5!3m4!1s0x346822489dc5817f:0xc53621f8c6d0a0f8!8m2!3d24.9581069!4d121.2406569">
+                <img src="img/map.png" style="float: right;"></img></a>
+            </p>
+            </h2>
+       </div>
+       <!--秀德廳-->
+    </section>
+    <section>
+        <div class="ray">
+            <div class="pic-cover"></div>
+            <h2 class="d">
+            <p>瑞麗堂</p>
+            <p class="pont">
+               <a href="瑞麗堂.html" ><img src="img/READMORE.png" style="float: left;"></img></a> &nbsp;&nbsp;&nbsp;&nbsp; 
+               <a href="https://www.google.co.kr/maps/place/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8+%E7%91%9E%E9%BA%97%E5%A0%82/@24.9588036,121.2401849,17z/data=!3m1!4b1!4m5!3m4!1s0x346822167083d1b1:0xafecfa5cafcb229f!8m2!3d24.9588036!4d121.2423736">
+                <img src="img/map.png" style="float: right;"></img></a>
+            </p>
+            </h2>
+       </div>
+       <!--瑞麗堂-->
+    </section>
+    <section>
+        <img class="img1" src="img/ivideo.png" alt="素材">
+        <div class="video">
+            <iframe id="video" width="800" height="450" src="https://www.youtube.com/embed/LqHMwAmbm3U" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+        <!--介紹影片-->
+    </section>
+    <section>
+        <img class="img2" src="img/feedback.png" alt="素材">
+        <div class="feedback">
+            <form class="feedback2" action="mailto:a3737441@gmail.com" method="POST" enctype="text/plain" accept-charset="UTF-8">
+                <input type="text" name="name" placeholder=" 姓名 NAME">
+                <input type="text" name="subject" placeholder=" 主旨 SUBJECT">
+                <textarea name="content" placeholder=" 內容 CONTENT"></textarea>
+                <input type="submit" name="sub" id="sub">
+            </form>
+        </div>
+        <!--回饋表單-->
+    </section>
+    <footer class="footer">
+        <div class="ft">
+            <div class="ftx">
+            Chung Yuan Christian University
+            </div>
+            32023 桃園市中壢區中北路二OO號 200 Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C. <br>
+            Tel：+886-3-265-9999 , +886-3-456-3171 │ Fax：+886-3-265-8888 , +886-3-456-3176
+        </div>
+        <!--頁尾-->
+    </footer>
+</body>
+</html>
