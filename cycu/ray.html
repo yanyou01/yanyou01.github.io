@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瑞麗堂</title>
+    <style>
+        .top-header{
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            position: relative;
+            z-index: 100;
+            background-color: #ece9e3;
+            top: 0%;
+            border-bottom: black 1px solid;
+        }
+        #fixed-header{
+            display: block;
+        }
+        .l1{
+            display: inline-block;
+            margin-right: 110px;
+            cursor: pointer;
+        }
+        .l2{
+            display: inline-block;
+            margin-right: 55px;
+            cursor: pointer;
+        }
+        .l3{
+            display: inline-block;
+            margin-left: 55px;
+            cursor: pointer;
+        }
+        .l4{
+            display: inline-block;
+            margin-left: 110px;
+            cursor: pointer;
+        }
+        .s1{
+            display: inline-block;
+            margin: 170px;
+            width: 653px;
+            height: 878px;
+            position: relative;
+        }
+        /*最上面選單*/
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        animation: animate 16s ease-in-out infinite;
+        background-size: cover;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+    @keyframes animate{
+            0%,100%{
+                background-image: url(picture/j0815.jpg);
+            }
+            25%{
+                background-image: url(picture/j0817.jpg);
+            }
+            50%{
+                background-image: url(picture/j0818.jpg);
+            }
+            75%{
+                background-image: url(picture/j0819.jpg);
+            }
+    }
+        
+        .box{
+            padding: 60px;
+            width: 700px;
+            background: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            margin: auto;
+            margin-top: -80px;
+            color: white;
+            font-family: sans-serif;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        table,th,td{
+            border: #ece9e3 1px solid;
+            border-collapse: collapse;
+            padding: 15px;
+            margin: 0% auto;
+        }
+        .img{
+            margin-top: 1%;
+        }
+        .footer {
+        position: relative;
+        background-color: #d8c7a6;
+        height: 90px;
+        overflow: hidden;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 65%;
+        }
+        .ft {
+        text-align: center;
+        margin-top: 11px;
+        font-size: 10px;
+        }
+        .ftx {
+        margin: 0px auto;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        }
+        /*頁尾*/
+</style>
+</head>
+<body bgcolor="ece9e3">
+    <header>
+        <div class="top-header">
+            <div id="fixed-header">
+                <a href="chungyuan.html">
+                    <img src="img/cycu.png" alt="素材" style="margin: auto;"> 
+                </a>
+                <!--中原大學-->
+            </div>
+            <div id="top-list">
+               <hr color="black" align="center" width="75%" size="1">
+                <nav>
+                    <div class="l1">
+                        <a href="chungyuan.html#library">
+                            <img src="img/learning.png" alt="素材">
+                        </a>
+                        <!--學習環境-->
+                    </div>
+                    <div class="l2">
+                        <a href="chungyuan.html#fung">
+                            <img src="img/performance.png" alt="素材" style="margin: auto;">
+                        </a>
+                        <!--藝文活動-->
+                    </div>
+                    <div class="l3">
+                        <a href="chungyuan.html#video">
+                            <img src="img/video.png" alt="素材">
+                        </a>
+                        <!--影片-->
+                    </div>
+                    <div class="l4">
+                        <a href="關於我們.html">
+                            <img src="img/aboutus.png" alt="素材">
+                        </a>
+                        <!--關於我們-->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--最上面選單-->
+    </header>
+    <div class="container">
+        <div class="box">
+                <h1>瑞麗堂</h1>
+                <h2>
+                    位於全人村中棟2樓，常常會定期舉辦藝文表演以及人生講座
+                </h2>
+                <img class="img" src="picture/j0816.JPG" class="box-img" width="332px" height="200px" align="top">
+                <img class="img" src="picture/IMG_6669.JPG" class="box-img" width="332px" height="200px" align="top">
+                <h2 style="margin-top: 5%;">人生講座時間表</h2>
+                    <table>
+                        <tr>
+                            <th>日期</th>
+                            <th>講師</th>
+                            <th>議題</th>
+                        </tr>
+                        <tr>
+                            <td>11/18</td>
+                            <td>王偉華會長</td>
+                            <td class="topic">選擇</td>
+                            <!--1118-->
+                        </tr>
+                        <tr>
+                            <td>11/25</td>
+                            <td>廖雅慧老師</td>
+                            <td class="topic">風暴後的精采人生</td>
+                            <!--1125-->
+                        </tr>
+                        <tr>
+                            <td>12/02</td>
+                            <td>楊怡庭執行總監</td>
+                            <td class="topic">國際NGO工作者的看見</td>
+                            <!--1202-->
+                        </tr>
+                        <tr>
+                            <td>12/09</td>
+                            <td>范大陵長老</td>
+                            <td class="topic">天賜大禮</td>
+                            <!--1209-->
+                        </tr>
+                        <tr>
+                            <td>12/16</td>
+                            <td>林姿瑩老師</td>
+                            <td class="topic">如果人生是一場音樂會</td>
+                            <!--1216-->
+                        </tr>
+                        <tr>
+                            <td>12/23</td>
+                            <td>吳俊德總經理</td>
+                            <td class="topic">從中輟到廚師</td>
+                            <!--1223-->
+                        </tr>
+                    </table>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="ft">
+            <div class="ftx">
+            Chung Yuan Christian University
+            </div>
+            32023 桃園市中壢區中北路二OO號 200 Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C. <br>
+            Tel：+886-3-265-9999 , +886-3-456-3171 │ Fax：+886-3-265-8888 , +886-3-456-3176
+        </div>
+        <!--頁尾-->
+    </footer>
+</body>
+</html>
